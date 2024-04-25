@@ -52,7 +52,7 @@ function playGame() {
 }
 
 
-playGame();
+//playGame();
 
 
 

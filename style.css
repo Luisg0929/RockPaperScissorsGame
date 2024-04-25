@@ -1,0 +1,45 @@
+body {
+    background-color: #A6827B;
+    
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    
+    width: 600px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.winner-container {
+    width: 100%;
+    height: 75px;
+    background-color: yellow;
+}
+.info-container {
+    width: 100%;
+    height: 150px;
+    background-color: green;
+}
+.game-info {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.button-container {
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.button-choices {
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+}
