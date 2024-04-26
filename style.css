@@ -16,23 +16,28 @@ body {
     
 }
 .winner-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
     width: 100%;
     height: 75px;
-    background-color: yellow;
+    
+    /*background-color: yellow;*/
 }
 .info-container {
     width: 100%;
     height: 150px;
-    background-color: green;
+    /*background-color: green;*/
 }
 .game-info {
-    font-size: 25px;
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 .button-container {
     width: 100%;
     height: 300px;
-    background-color: blue;
+    /*background-color: blue;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -42,4 +47,39 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 12px;
+    background-color: #A6827B;
+    padding: 0;
+    border: 0;
+}
+.img {
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    
+    
+}
+.game-score-container {
+    width: 100%;
+    height: 75px;
+    /*background-color: blueviolet;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+.game-score {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    align-self: center;
+    
+    
+}
+.computerchoice-show-container {
+    height: 250px;
+    width: 100%;
+    /*background-color: azure;*/
+    text-align: center;
+    
+}
+.bruh {
+    margin: 0px;
 }

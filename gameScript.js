@@ -37,7 +37,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function playGame() {
-    for (let i = 0; i <= 4; i++){
+    /*for (let i = 0; i <= 4; i++){
         const playerSelection = prompt('Choose Rock, Paper or Scissors');
         let lowerStr = playerSelection.toLowerCase(); 
         if (lowerStr === 'rock' || lowerStr === 'paper' || lowerStr === 'scissors') {
@@ -49,10 +49,91 @@ function playGame() {
             continue;
         }
     }
+    */
+
+
 }
 
 
+
+
+
 //playGame();
+
+const btn1 = document.querySelector('.rock');
+btn1.addEventListener('click', () => {
+    
+    let playerChoice = 'rock';
+    let computerChoice = getComputerChoice();
+
+    
+
+    if (computerChoice === 'rock') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'rock-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'rock.jpg';
+        img.alt = 'pic of a rock'
+        container.appendChild(img); 
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
+
+        
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
+
+        
+        
+       
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const btn2 = document.querySelector('.paper');
+btn2.addEventListener('click', () => {
+    let playerChoice = 'paper';
+    let computerChoice = getComputerChoice();
+
+    alert(playRound(playerChoice,computerChoice));
+
+});
+
+const btn3 = document.querySelector('.scissors');
+btn3.addEventListener('click', () => {
+    let playerChoice = 'scissors';
+    let computerChoice = getComputerChoice();
+
+    alert(playRound(playerChoice,computerChoice));
+
+});
 
 
 
