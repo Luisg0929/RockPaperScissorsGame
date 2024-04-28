@@ -62,6 +62,15 @@ function playGame() {
 
 const btn1 = document.querySelector('.rock');
 btn1.addEventListener('click', () => {
+    const checkNode = document.querySelector('.computerchoice-show-container');
+    const checkNode2 = document.querySelector('.winner-container');
+    if (checkNode.hasChildNodes() === true) {
+        checkNode.innerHTML = ''; 
+    }
+    if (checkNode2.hasChildNodes() === true) {
+        checkNode2.innerHTML = ''; 
+    }
+    
     
     let playerChoice = 'rock';
     let computerChoice = getComputerChoice();
@@ -78,6 +87,7 @@ btn1.addEventListener('click', () => {
         img.src = 'rock.jpg';
         img.alt = 'pic of a rock'
         container.appendChild(img); 
+        
 
         const container2 = document.querySelector('.winner-container')
         const content = document.createElement('p');
@@ -91,11 +101,60 @@ btn1.addEventListener('click', () => {
         content.style.margin = '0';
         content.style.color = 'green';
         container2.appendChild(content);
+  
+    }
+    else if (computerChoice === 'paper') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'paper-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'paper.jpg';
+        img.alt = 'pic of paper'
+        container.appendChild(img); 
+        
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
 
         
-        
-       
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
     }
+
+    else if (computerChoice === 'scissors') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'scissors-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'scissors.jpg';
+        img.alt = 'pic of scissors'
+        container.appendChild(img); 
+        
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
+
+        
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
+    }
+
 });
 
 
@@ -119,19 +178,195 @@ btn1.addEventListener('click', () => {
 
 const btn2 = document.querySelector('.paper');
 btn2.addEventListener('click', () => {
+    const checkNode = document.querySelector('.computerchoice-show-container');
+    const checkNode2 = document.querySelector('.winner-container');
+    if (checkNode.hasChildNodes() === true) {
+        checkNode.innerHTML = ''; 
+    }
+    if (checkNode2.hasChildNodes() === true) {
+        checkNode2.innerHTML = ''; 
+    }
+    
+    
     let playerChoice = 'paper';
     let computerChoice = getComputerChoice();
 
-    alert(playRound(playerChoice,computerChoice));
+    
+
+    if (computerChoice === 'rock') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'rock-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'rock.jpg';
+        img.alt = 'pic of a rock'
+        container.appendChild(img); 
+        
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
+
+        
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
+  
+    }
+    else if (computerChoice === 'paper') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'paper-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'paper.jpg';
+        img.alt = 'pic of paper'
+        container.appendChild(img); 
+        
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
+
+        
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
+    }
+
+    else if (computerChoice === 'scissors') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'scissors-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'scissors.jpg';
+        img.alt = 'pic of scissors'
+        container.appendChild(img); 
+        
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
+
+        
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
+    }
 
 });
 
 const btn3 = document.querySelector('.scissors');
 btn3.addEventListener('click', () => {
+    const checkNode = document.querySelector('.computerchoice-show-container');
+    const checkNode2 = document.querySelector('.winner-container');
+    if (checkNode.hasChildNodes() === true) {
+        checkNode.innerHTML = ''; 
+    }
+    if (checkNode2.hasChildNodes() === true) {
+        checkNode2.innerHTML = ''; 
+    }
+    
+    
     let playerChoice = 'scissors';
     let computerChoice = getComputerChoice();
 
-    alert(playRound(playerChoice,computerChoice));
+    
+
+    if (computerChoice === 'rock') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'rock-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'rock.jpg';
+        img.alt = 'pic of a rock'
+        container.appendChild(img); 
+        
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
+
+        
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
+  
+    }
+    else if (computerChoice === 'paper') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'paper-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'paper.jpg';
+        img.alt = 'pic of paper'
+        container.appendChild(img); 
+        
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
+
+        
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
+    }
+
+    else if (computerChoice === 'scissors') {
+        const container = document.querySelector('.computerchoice-show-container');
+        let img = document.createElement('img');
+        img.classList = 'scissors-computer'
+        
+        img.style.height = '200px'; 
+        img.style.width = '200px'; 
+        img.src = 'scissors.jpg';
+        img.alt = 'pic of scissors'
+        container.appendChild(img); 
+        
+
+        const container2 = document.querySelector('.winner-container')
+        const content = document.createElement('p');
+        content.textContent = playRound(playerChoice,computerChoice);
+
+        
+        content.style.fontSize = '40px';
+        content.style.fontWeight = 'bold';
+        content.style.fontFamily = 'Georgia'; 
+        content.style.textAlign = 'center'; 
+        content.style.margin = '0';
+        content.style.color = 'green';
+        container2.appendChild(content);
+    }
 
 });
 
