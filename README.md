@@ -13,4 +13,4 @@ Ive learned that it is not easy to manipulate the DOM, working with event listen
 manipulation techniques can be hard and confusing. 
 
 Ive also could of used lots of OOP principles by making lots of functions that I could of re-used in my program
-although I mainly focusing on code fucntionality rather than code readability for this project.
+although I mainly was focusing on code fucntionality rather than code readability for this project.
